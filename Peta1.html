@@ -4,16 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Video and Audio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Custom font -->
     <style>
         body {
-            background-color: #E6E6FA;
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: 'Roboto', sans-serif; /* A clean and modern font */
+            padding: 20px; /* Space around the content */
+            background-image: url('https://www.transparenttextures.com/patterns/whitestripes.png'); /* Subtle background pattern */
         }
         h1 {
             color: blue;
             text-align: center;
+            margin-bottom: 20px; /* Space below the heading */
         }
         p {
-            font-size: 1.5em;
+            font-size: 1.5em; /* This corresponds to approximately size 5 */
+            text-align: justify; /* Justified text for better readability */
+            margin-bottom: 20px; /* Space below the paragraph */
+            line-height: 1.6; /* Improved readability */
+        }
+        h3 {
+            color: #333; /* Dark gray color for subheadings */
+            margin-top: 30px; /* Space above the subheading */
+        }
+        video, audio {
+            display: block; /* Makes video and audio elements take full width */
+            margin: 0 auto; /* Center the video and audio elements */
+            border: 2px solid #ccc; /* Light gray border */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+            transition: transform 0.2s; /* Smooth transition effect */
+        }
+        video:hover, audio:hover {
+            transform: scale(1.02); /* Slightly scale up on hover */
+        }
+        hr {
+            margin: 20px 0; /* Space around the horizontal rule */
+            border: 1px solid #ccc; /* Change the color of the line */
+        }
+        @media (max-width: 768px) {
+            video, audio {
+                width: 100%; /* Make video and audio full width on smaller screens */
+                height: auto; /* Maintain aspect ratio */
+            }
         }
     </style>
 </head>
@@ -26,8 +59,8 @@
     </p>
 
     <h3>MY FAVORITE MUSIC VIDEO</h3>
-    <video width="600" height="400" controls>
-        <source src="MVmoë No Disk.mp4" type="video/mp4">
+    <video width="1280" height="720" controls>
+        <source src="Imagine Dragons x J.I.D - Enemy (from the series Arcane League of Legends).mp4" type="video/mp4">
     </video>
     
     <br>
